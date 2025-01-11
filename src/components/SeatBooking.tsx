@@ -65,11 +65,11 @@ export default function SeatBookingSystem() {
       <h1 className="text-3xl font-bold mb-6 text-center">
         Seat Booking System
       </h1>
-      <SeatGrid seats={seats} onSeatClick={toggleSeat} />  // Pass seats and the toggle function to the SeatGrid component
+      <SeatGrid seats={seats} onSeatClick={toggleSeat} />  
 
-      {error && <p className="text-red-500 text-center mt-4">{error}</p>}  // Display error message if any
+      {error && <p className="text-red-500 text-center mt-4">{error}</p>} 
       <BookingSummary
-        selectedSeats={selectedSeats}  // Pass selected seats and total cost to the BookingSummary component
+        selectedSeats={selectedSeats}
         totalCost={totalCost}
         onBooking={handleBooking}  // Handle booking confirmation
       />
