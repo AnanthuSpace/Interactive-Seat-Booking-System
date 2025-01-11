@@ -65,3 +65,56 @@ Ensure you have the following installed:
 1. Clone the repository:  
    ```bash
    git clone https://github.com/AnanthuSpace/Interactive-Seat-Booking-System.git
+   ```  
+
+2. Navigate to the project folder:  
+   ```bash
+   cd Interactive-Seat-Booking-System
+   ```  
+
+3. Install dependencies:  
+   ```bash
+   npm install
+   ```  
+
+4. Start the development server:  
+   ```bash
+   npm run dev
+   ```  
+
+---
+
+## Folder Structure  
+
+### Frontend  
+- **src/components:** Modular React components (e.g., `Seat`, `SeatGrid`, `BookingSummary`).  
+- **src/interfaces:** TypeScript types and interfaces for reusable definitions.  
+- **src/pages:** Main app logic and state management.  
+- **src/styles:** Global and component-specific styles.  
+- **App.tsx:** Entry point of the application.  
+
+---
+
+## Technologies Used  
+
+### Frontend  
+- Framework: React (with TypeScript)  
+- Styling: Tailwind CSS  
+- State Management: React Hooks (`useState`, `useEffect`)  
+- Bundler: Vite  
+
+---
+
+## Future Enhancements  
+
+- Integration with a backend for real-time seat availability and booking persistence.  
+- Addition of user authentication and payment gateway.  
+- Enhanced accessibility features.  
+
+---
+
+## Author  
+
+- [Ananthu Mohan](https://github.com/AnanthuSpace)  
+
+Feel free to contribute by submitting issues or pull requests!
