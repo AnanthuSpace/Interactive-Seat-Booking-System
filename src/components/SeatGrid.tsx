@@ -1,10 +1,10 @@
-import React from 'react'
-import { Seat } from './Seat'
-import { SelectedSeat } from '../interfaces/types'
+import React from 'react';
+import { Seat } from './Seat';
+import { SelectedSeat } from '../interfaces/types';
 
 interface SeatGridProps {
-  seats: SelectedSeat[]
-  onSeatClick: (seatId: string) => void
+  seats: SelectedSeat[];  // Array of seats to be displayed
+  onSeatClick: (seatId: string) => void;  // Callback function for seat click event
 }
 
 export const SeatGrid: React.FC<SeatGridProps> = ({ seats, onSeatClick }) => {
@@ -14,6 +14,5 @@ export const SeatGrid: React.FC<SeatGridProps> = ({ seats, onSeatClick }) => {
         <Seat key={seat.id} seat={seat} onClick={() => onSeatClick(seat.id)} />
       ))}
     </div>
-  )
+  );
 }
-

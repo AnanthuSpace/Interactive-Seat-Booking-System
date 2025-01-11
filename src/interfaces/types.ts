@@ -4,15 +4,21 @@ export interface SeatType {
     number: number;
     price: number;
     tier: 'Silver' | 'Gold' | 'Platinum';
-  }
-  
-  export interface SelectedSeat extends SeatType {
+}
+
+export interface SelectedSeat extends SeatType {
     selected: boolean;
-  }
-  
-  export interface ModalProp {
+}
+
+export interface ModalProp {
     isOpen: boolean;
     onClose: () => void;
     onConfirm: () => void;
-  }
-  
+}
+
+
+export interface BookingSummaryProps {
+    selectedSeats: SelectedSeat[];
+    totalCost: number;
+    onBooking: () => void;
+}
